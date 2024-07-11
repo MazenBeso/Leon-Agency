@@ -3,10 +3,227 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Leon-Agency</title>
+    <link rel="icon" href="assets/imgs/logo.png">
     <link rel="stylesheet" href="assets/style/style.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.css" rel="stylesheet"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.js"></script>
+
 </head>
 <body>
-    <h1>Hello</h1>
+
+<nav class="bg-white dark:bg-gray-800 dark:border-gray-700">
+  <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-3">
+    <a href="#" class="flex items-center space-x-3 rtl:space-x-reverse">
+        <img src="assets/imgs/logo.png" class="h-6 ms-8" alt="Leon Agency Logo" />
+    </a>
+    <button data-collapse-toggle="navbar-hamburger" type="button" class="inline-flex items-center justify-center me-5 p-2 w-10 h-10 text-sm text-gray-500 rounded-lg hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600" aria-controls="navbar-hamburger" aria-expanded="false">
+      <span class="sr-only">Open main menu</span>
+      <svg class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 17 14">
+          <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 1h15M1 7h15M1 13h15"/>
+      </svg>
+    </button>
+    <div class="hidden w-full" id="navbar-hamburger">
+      <ul class="flex flex-col font-medium mt-4 rounded-lg bg-gray-50 dark:bg-gray-800 dark:border-gray-700">
+        <li>
+          <a href="home" class="block py-2 px-3 text-white bg-blue-700 rounded dark:bg-blue-600" aria-current="page">Home</a>
+        </li>
+        <li>
+          <a href="#services" class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-white">Services</a>
+        </li>
+        <li>
+          <a href="#portfolio" class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 dark:text-gray-400 md:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white">Pricing</a>
+        </li>
+        <li>
+          <a href="#about" class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-white">Contact</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<section class="landing flex justify-center items-center" id="home">
+    <div class="flex flex-col items-center mb-8">
+        <h2 class="font-bold text-5xl mb-7" style="color: #10cab7;">Hello There</h2>
+        <p class="text-xl leading-loose ">We are Leon - Super Creative & <br> Minimal Agency Web Template</p>
+    </div>
+</section>
+
+
+<section class="bg-gray-200 features">
+<div class="grid grid-cols-2 md:grid-cols-3 gap-4 p">
+    <div class="flex flex-col justify-center items-center">
+        <h2><i class="fa-solid fa-wand-magic-sparkles fa-3x" style="color: #10cab7;"></i></h2>
+        <h2 class="font-bold title">Tell Us Your Idea</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas!</p>
+    </div>
+    <div class="flex flex-col items-center">
+        <i class="far fa-gem fa-3x" style="color: #10cab7;"></i>
+        <h2 class="font-bold title">We Will Do All The Work</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas!</p>
+    </div>
+    <div class="flex flex-col items-center">
+        <i class="fa-solid fa-earth-americas fa-3x" style="color: #10cab7;"></i>
+        <h2 class="font-bold title">Your Product is Worldwide</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas!</p>
+    </div>
+</div>
+</section>
+
+<section class="mt-6 mb-6" id="services">
+    <div class="flex flex-col justify-center items-center">
+    <h2 class="text-7xl font-extrabold" style="color: #ebeced;">Services</h2>
+    <p class="relative bottom-5" style="color: #797979;">Don't be busy, be productive</p>
+  </div>
+</section>
+
+<section class="servicesholder">
+
+<div class="parent">
+  <div>
+    <i class="fas fa-palette fa-2x graphic" style="color: #10cab7;"></i>
+    <h3 class="font-extrabold">Graphic Design</h3>
+    <p class="text-gray-400 mt-4">Graphic design is the process of visual communication and problem-solving using one or more of typography, photography and illustration.</p>
+  </div>
+  <div>
+    <i class="fas fa-vector-square fa-2x webdesign" style="color: #10cab7;"></i>
+    <h3 class="font-extrabold">Web Design</h3>
+    <p class="text-gray-400 mt-4">Web design encompasses many different skills and disciplines in the production and maintenance of websites.</p>
+  </div>
+  <div>
+    <i class="fab fa-sketch fa-2x ui" style="color: #10cab7;"></i>
+    <h3 class="font-extrabold">UI & UX</h3>
+    <p class="text-gray-400 mt-4">Process of enhancing user satisfaction with a product by improving the usability, accessibility, and pleasure provided in the interaction.</p>
+  </div>
+  <div>
+    <i class="fas fa-pencil-ruler fa-2x webdev" style="color: #10cab7;"></i>
+    <h3 class="font-extrabold">Web Development</h3>
+    <p class="text-gray-400 mt-4">Web development is a broad term for the work involved in developing a web site for the Internet or an intranet.</p>
+  </div>
+</div>
+
+<div class="servicesimgholder">
+  <img class="servicesimg" src="assets/imgs/services.jpg" alt="..">
+</div>
+
+</section>
+
+<section style="background-color: #f6f6f6;" id="portfolio">
+  <div class="pt-10 pb-10">
+      <div class="flex flex-col justify-center items-center">
+      <h2 class="text-7xl font-extrabold" style="color: #ebeced;">Portfolio</h2>
+      <p class="relative bottom-5" style="color: #797979;">If you do it right, it will last forever.</p>
+    </div>
+  </div>
+
+  <div class="portfolio-holder pb-16">
+
+<div class="max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
+    <a href="#">
+        <img class="rounded-t-lg" src="assets/imgs/portfolio-1.jpg" alt="" />
+    </a>
+    <div class="p-5">
+        <a href="#">
+            <h5 class="mb-2 text-lg font-bold tracking-tight text-gray-900 dark:text-white">Project Here</h5>
+        </a>
+        <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">My creative ability is very difficult to measure because it can manifest in so many surprising and.</p>
+        <a href="#" class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-gray-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
+            Show more
+             <svg class="rtl:rotate-180 w-3.5 h-3.5 ms-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
+                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 5h12m0 0L9 1m4 4L9 9"/>
+            </svg>
+        </a>
+    </div>
+</div>
+
+<div class="max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
+    <a href="#">
+        <img class="rounded-t-lg" src="assets/imgs/portfolio-2.jpg" alt="" />
+    </a>
+    <div class="p-5">
+        <a href="#">
+            <h5 class="mb-2 text-lg font-bold tracking-tight text-gray-900 dark:text-white">Project Here</h5>
+        </a>
+        <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">My creative ability is very difficult to measure because it can manifest in so many surprising and.</p>
+        <a href="#" class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-gray-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
+            Show more
+             <svg class="rtl:rotate-180 w-3.5 h-3.5 ms-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
+                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 5h12m0 0L9 1m4 4L9 9"/>
+            </svg>
+        </a>
+    </div>
+</div>
+
+<div class="max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
+    <a href="#">
+        <img class="rounded-t-lg" src="assets/imgs/portfolio-3.jpg" alt="" />
+    </a>
+    <div class="p-5">
+        <a href="#">
+            <h5 class="mb-2 text-lg font-bold tracking-tight text-gray-900 dark:text-white">Project Here</h5>
+        </a>
+        <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">My creative ability is very difficult to measure because it can manifest in so many surprising and.</p>
+        <a href="#" class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-gray-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
+            Show More
+            <svg class="rtl:rotate-180 w-3.5 h-3.5 ms-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
+                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 5h12m0 0L9 1m4 4L9 9"/>
+            </svg>
+        </a>
+    </div>
+</div>
+
+  </div>
+
+</section>
+
+
+<section class="mt-5">
+  <div class="pt-10 pb-10">
+      <div class="flex flex-col justify-center items-center">
+      <h2 class="text-7xl font-extrabold" style="color: #ebeced;">About</h2>
+      <p class="relative bottom-5" style="color: #797979;">Less is more work</p>
+    </div>
+  </div>
+
+
+  <div class="about-holder">
+    <div class="about-img-holder">
+      <img src="assets/imgs/about.jpg" alt="" class="w-64 about-img">
+    </div>
+    <div class="leading-loose">
+      <p class="font-bold">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil nemo neque voluptate tempora velit cum non, fuga vitae architecto delectus sed maxime rerum impedit aliquam obcaecati, aut excepturi iusto laudantium!</p>
+      <hr class="mt-8 mb-8 w-80">
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil nemo neque voluptate tempora velit cum non, fuga vitae architecto delectus sed maxime rerum impedit aliquam obcaecati, aut excepturi iusto laudantium!</p>
+    </div>
+  </div>
+</section>
+
+
+<section class="mt-14 pb-16" style="background-color: #f6f6f6;">
+  <div class="pt-10 pb-10">
+      <div class="flex flex-col justify-center items-center">
+      <h2 class="text-7xl font-extrabold" style="color: #ebeced;">Contact</h2>
+      <p class="relative bottom-5" style="color: #797979;">We are born to create</p>
+    </div>
+  </div>
+
+  <div class="flex flex-col justify-center items-center" style="color: #2c4755;">
+    <h2 class="text-2xl font-bold mb-2">Feel free to drop us a line at:</h2>
+    <h3 class="text-lg font-bold mb-2" style="color: #10cab7;">Mazenbeso25@gmail.com</h3>
+    <div class="flex gap-5 items-center">
+      Find Me On Social Networks
+      <a href=""><i class="fab fa-youtube"></i></a>
+      <a href=""><i class="fab fa-linkedin"></i></a>
+      <a href=""><i class="fab fa-github"></i></a>
+    </div>
+  </div>
+</section>
+
+<footer class="p-8 flex justify-center items-center" style="background-color: #2c4755;" id="about">
+  <h3 class="text-white font-bold">© 2024 <span style="color: #10cab7;">Beso</span> All Right Reserved</h3>
+</footer>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/js/all.min.js" integrity="sha512-u3fPA7V8qQmhBPNT5quvaXVa1mnnLSXUep5PS1qo5NRzHwG19aHmNJnj1Q8hpA/nBWZtZD4r4AX6YOt5ynLN2g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 </body>
 </html>

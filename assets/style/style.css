@@ -1,3 +1,111 @@
-h1{
-    color: red;
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+.landing{
+    width: 100%;
+    height: calc(100vh - 8.2vh);
+    background-image: url(../imgs/landing.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.features{
+    padding: 60px;
+}
+
+.title{
+    font-weight: 800;
+    margin: 30px 0;
+}
+
+.p{
+    line-height: 1.8!important;
+    font-size: 17px!important;
+}
+
+.parent {
+    width: 50%;
+    height: 50%;
+    transform: translateX(50%);
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-column-gap: 60px;
+    grid-row-gap: 40px;
+    -webkit-transform: translateX(50%);
+    -moz-transform: translateX(50%);
+    -ms-transform: translateX(50%);
+    -o-transform: translateX(50%);
+}
+
+.graphic,.webdesign,.ui,.webdev{
+    position: relative;
+    right: 55px;
+    top: 35px;
+}
+
+.servicesholder{
+    position: relative;
+}
+
+.servicesimg{
+    position: absolute;
+    width: 260px;
+    top: 15px;
+    right: 95px;
+    z-index: 1;
+}
+
+.servicesimgholder::after{
+    position: absolute;
+    content: " ";
+    width: 100px;
+    height: 390px;
+    bottom: 0;
+    right: 55px;
+    background-color:#2c4755;
+}
+
+.portfolio-holder{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 1fr;
+    grid-column-gap: 25px;
+    justify-items: center;
+}
+
+.about-holder{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 1fr;
+    grid-column-gap: 35px;
+    justify-items: center;
+    position: relative;
+}
+
+.about-holder p{
+    max-width: 650px;
+}
+
+hr{
+    box-sizing: content-box;
+    height: 0;
+    overflow: visible;
+    width: 50%!important;
+    display: inline-block;
+    border-color: #10cab7;
+}
+
+.about-img-holder::before{
+    content: "";
+    position: absolute;
+    background-color: #ebeced;
+    width: 100px;
+    height: 450px;
+    top: -40px;
+    left: 220px;
+    z-index: -1;
 }
